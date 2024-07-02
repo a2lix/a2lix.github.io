@@ -134,7 +134,7 @@
                         : e.touches?.[0] ?? { clientX: window.innerWidth / 2, clientY: window.innerHeight / 2 };
                     const centerX = window.innerWidth / 2;
                     const centerY = window.innerHeight / 2;
-                    
+
                     requestAnimationFrame(() => {
                         document.documentElement.style.setProperty('--move-x', (clientX - centerX) / centerX);
                         document.documentElement.style.setProperty('--move-y', (clientY - centerY) / centerY);
