@@ -147,8 +147,8 @@
                 if (window.DeviceOrientationEvent) {
                     window.addEventListener('deviceorientation', (e) => {
                         requestAnimationFrame(() => {
-                            document.documentElement.style.setProperty('--move-x', e.gamma / 90);
-                            document.documentElement.style.setProperty('--move-y', e.beta / 90);
+                            document.documentElement.style.setProperty('--move-x', e.gamma / 50);
+                            document.documentElement.style.setProperty('--move-y', e.beta / 50);
                         });
                     });
                 }
